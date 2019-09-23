@@ -1,41 +1,26 @@
 """
-Author: Abner Ayala-Acevedo
+Author: Amr Mostafa
 
 This script based on examples provided in the keras documentation and a blog.
 "Building powerful image classification models using very little data"
 from blog.keras.io.
 
-Dataset: Subset of Kaggle Dataset
-https://www.kaggle.com/c/dogs-vs-cats/data
-- cat pictures index 0-999 in data/train/cats
-- cat pictures index 1000-1400 in data/validation/cats
-- dogs pictures index 0-999 in data/train/dogs
-- dog pictures index 1000-1400 in data/validation/dogs
+Data Structure
 
-Example: Dogs vs Cats (Directory Structure)
-data/
-    train/
-        dogs/
-            dog001.jpg
-            dog002.jpg
+
+/
+
+        Good/
+            good001.jpg
+            good002.jpg
             ...
-        cats/
-            cat001.jpg
-            cat002.jpg
-            ...
-    validation/
-        dogs/
-            dog001.jpg
-            dog002.jpg
-            ...
-        cats/
-            cat001.jpg
-            cat002.jpg
+        Bad/
+            bad001.jpg
+            bad002.jpg
             ...
 
-Example has 1000 training examples for each class, and 400 validation examples for each class.
-The data folder already contains the dogs vs cat data you simply need to run script. For the dogs_cats classification
-you can find a model already trained in the model folder. Feel free to create your own data.
+
+
 """
 
 import sys
