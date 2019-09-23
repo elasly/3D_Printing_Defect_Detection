@@ -1,21 +1,7 @@
 """
-Author: Abner Ayala-Acevedo
+Author: Amr Mostafa
 
-Dataset: Kaggle Dataset Dogs vs Cats
-https://www.kaggle.com/c/dogs-vs-cats/data
-- test folder unlabelled data
 
-Example: Dogs vs Cats (Directory Structure)
-test_dir/
-    test/
-        001.jpg
-        002.jpg
-        ...
-        cat001.jpg
-        cat002.jpg
-        ...
-
-If you need using a multi-class classification model change binary_cross_entropy to categorical_cross_entropy
 """
 
 import sys
@@ -36,7 +22,7 @@ np.random.seed(seed=seed)
 tf.set_random_seed(seed=seed)
 
 # parameters dependent on your dataset: modified to your example
-img_width, img_height = 299, 299  # must match the fix size of your train image sizes. 600, 150 for text_images
+img_width, img_height = 299, 299  # must match the fix size of your train image sizes.
 batch_size = 32  # try 4, 8, 16, 32, 64, 128, 256 dependent on CPU/GPU memory capacity (powers of 2 values).
 
 # default paths
@@ -91,7 +77,7 @@ def classify(trained_model_dir, test_data_dir, results_path):
 if __name__ == '__main__':
     if not len(sys.argv) == 4:
         print('Arguments must match:\npython code/classify.py <model_dir/> <test_dir/> <results_dir/>')
-        print('Example: python code/classify.py model/dogs_cats data/dogs_cats/test/ results/dogs_cats/')
+        print('Example: python code/classify.py model/DDD data/Good_Bad/test/ results/Good_Bad/')
         sys.exit(2)
     else:
         model_dir = os.path.abspath(sys.argv[1])
